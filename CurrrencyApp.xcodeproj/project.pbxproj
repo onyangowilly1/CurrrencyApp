@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84BF51F51D0FEB580058DA5F /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF51F41D0FEB580058DA5F /* Setting.swift */; };
+		84BF51F71D0FEC910058DA5F /* CurrencyServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF51F61D0FEC910058DA5F /* CurrencyServices.swift */; };
+		84BF51F91D0FEDB30058DA5F /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF51F81D0FEDB30058DA5F /* Currency.swift */; };
 		84E51C501CEB1110001FF5FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E51C4F1CEB1110001FF5FF /* AppDelegate.swift */; };
-		84E51C521CEB1110001FF5FF /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E51C511CEB1110001FF5FF /* MasterViewController.swift */; };
+		84E51C521CEB1110001FF5FF /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E51C511CEB1110001FF5FF /* MasterTableViewController.swift */; };
 		84E51C541CEB1110001FF5FF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E51C531CEB1110001FF5FF /* DetailViewController.swift */; };
 		84E51C571CEB1110001FF5FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E51C551CEB1110001FF5FF /* Main.storyboard */; };
 		84E51C591CEB1110001FF5FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E51C581CEB1110001FF5FF /* Assets.xcassets */; };
@@ -16,9 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84BF51F41D0FEB580058DA5F /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		84BF51F61D0FEC910058DA5F /* CurrencyServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyServices.swift; sourceTree = "<group>"; };
+		84BF51F81D0FEDB30058DA5F /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		84E51C4C1CEB1110001FF5FF /* CurrrencyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrrencyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E51C4F1CEB1110001FF5FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84E51C511CEB1110001FF5FF /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		84E51C511CEB1110001FF5FF /* MasterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
 		84E51C531CEB1110001FF5FF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		84E51C561CEB1110001FF5FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84E51C581CEB1110001FF5FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,12 +63,15 @@
 			isa = PBXGroup;
 			children = (
 				84E51C4F1CEB1110001FF5FF /* AppDelegate.swift */,
-				84E51C511CEB1110001FF5FF /* MasterViewController.swift */,
+				84E51C511CEB1110001FF5FF /* MasterTableViewController.swift */,
 				84E51C531CEB1110001FF5FF /* DetailViewController.swift */,
 				84E51C551CEB1110001FF5FF /* Main.storyboard */,
 				84E51C581CEB1110001FF5FF /* Assets.xcassets */,
 				84E51C5A1CEB1110001FF5FF /* LaunchScreen.storyboard */,
 				84E51C5D1CEB1110001FF5FF /* Info.plist */,
+				84BF51F41D0FEB580058DA5F /* Setting.swift */,
+				84BF51F61D0FEC910058DA5F /* CurrencyServices.swift */,
+				84BF51F81D0FEDB30058DA5F /* Currency.swift */,
 			);
 			path = CurrrencyApp;
 			sourceTree = "<group>";
@@ -139,8 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84BF51F91D0FEDB30058DA5F /* Currency.swift in Sources */,
+				84BF51F71D0FEC910058DA5F /* CurrencyServices.swift in Sources */,
 				84E51C541CEB1110001FF5FF /* DetailViewController.swift in Sources */,
-				84E51C521CEB1110001FF5FF /* MasterViewController.swift in Sources */,
+				84E51C521CEB1110001FF5FF /* MasterTableViewController.swift in Sources */,
+				84BF51F51D0FEB580058DA5F /* Setting.swift in Sources */,
 				84E51C501CEB1110001FF5FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +303,7 @@
 				84E51C621CEB1110001FF5FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -2,7 +2,7 @@
 //  DetailViewController.swift
 //  CurrrencyApp
 //
-//  Created by admin on 17/05/16.
+//  Created by admin on 14/06/16.
 //  Copyright © 2016 onyangowilly. All rights reserved.
 //
 
@@ -11,35 +11,36 @@ import UIKit
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
+ var detailDescription = ""
 
-
-    var detailItem: AnyObject? {
+    var detailItem: Currency? {
         didSet {
             // Update the view.
             self.configureView()
         }
     }
-
+    
     func configureView() {
         // Update the user interface for the detail item.
-        if let detail = self.detailItem {
+        if let detail:Currency = self.detailItem {
             if let label = self.detailDescriptionLabel {
-                label.text = detail.description
+                label.text = detail.rates
             }
         }
     }
-
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+                super.viewDidLoad()
+        detailDescriptionLabel.text = detailDescription
+        
         self.configureView()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
-
-
+    
+    
 }
 
