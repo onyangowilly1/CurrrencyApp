@@ -9,6 +9,6 @@
 import UIKit
 class Setting{
 
-var Currencies = "http://api.fixer.io/latest?base=USD"
+var Currency = "http://api.fixer.io/latest?base=USD"
 
 }

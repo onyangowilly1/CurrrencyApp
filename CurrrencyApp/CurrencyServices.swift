@@ -18,7 +18,7 @@ class CurrencyService{
         self.setting = Setting()
     }
     func getCurrencys(callback:(NSDictionary)->()){
-        request(setting.Currencies, callback: callback)
+        request(setting.Currency, callback: callback)
         
     }
     
